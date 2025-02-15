@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg-login-page.png) no-repeat center center / cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    padding: 20px 10px;
+}
+
+.form {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form>input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container>p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.form button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#social-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+#social-login>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

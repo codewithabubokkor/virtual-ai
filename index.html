@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Virtual AI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="loginSignup.css">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '633297949147382',
+                cookie: true,
+                xfbml: true,
+                version: 'v12.0'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login to Virtual AI</h1>
+        <form id="login-form" class="form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="social-login">
+            <button id="google-login"><i class="fa-brands fa-google"></i> Google</button>
+            <button id="facebook-login"><i class="fa-brands fa-facebook"></i> facebook</button>
+        </div>
+        <p>Don't have an account? <a href="/public/signup.html">Sign up</a></p>
+    </div>
+    <script src="/src/js/main.js" type="module"></script>
+</body>
+
+</html>
